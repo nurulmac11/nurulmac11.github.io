@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="https://nmacun.com/feed_style.xsl" type="text/xsl"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:base="http://purl.org/atompub/base/1.0/" xml:lang="en" xml:base="https:&#x2F;&#x2F;nmacun.com&#x2F;">
+    <str:translations xmlns:str="https://github.com/welpo/tabi">
+        <str:separator>
+            •
+        </str:separator>
+        <str:about_feeds>This is a web feed, also known as an Atom feed. Subscribe by copying the URL from the address bar into your newsreader. Visit About Feeds to learn more and get started. It&#x27;s free.</str:about_feeds>
+        <str:visit_the_site>Visit website</str:visit_the_site>
+        <str:recent_posts>Recent posts</str:recent_posts>
+        <str:last_updated_on>Updated on $DATE</str:last_updated_on>
+        <str:default_theme></str:default_theme>
+    </str:translations><link rel="extra-stylesheet" href="https://nmacun.com/skins/evangelion.css?h=191505807c4f09b9cc7e" /><title>nurulmac11's blog - omega-3</title>
+        <subtitle>writings from nurulmac11</subtitle>
+    <link href="https://nmacun.com/tags/omega-3/atom.xml" rel="self" type="application/atom+xml"/>
+    <post_listing_date>date</post_listing_date>
+    <link href="https://nmacun.com"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2024-05-16T00:00:00+00:00</updated>
+    <id>https://nmacun.com/tags/omega-3/atom.xml</id><entry xml:lang="en">
+        <title>A Journey to Wellness: Food</title>
+        <published>2024-05-16T00:00:00+00:00</published>
+        <updated>2024-05-16T00:00:00+00:00</updated>
+        <author>
+            <name>nurulmac11</name>
+        </author>
+        <link rel="alternate" href="https://nmacun.com/blog/wellness-food/" type="text/html"/>
+        <id>https://nmacun.com/blog/wellness-food/</id>
+        <summary type="html">
+There is a difference between knowing the path and walking the path. - Morpheus
+
+
+DISCLAIMER: I am not a healthcare professional. This post is based on my personal experience. Please consult a doctor before making any significant changes to your diet or health routine.
+
+
+
+Surgery appointment
+
+  
+    
+  
+    
+  
+    
+  
+  
+    
+    
+      Photo by National Cancer Institute on Unsplash
+    
+  
+
+I started experiencing constant nose congestion while trying to gain muscle at the gym by eating chicken and rice with little to no oil. Despite seeing three doctors who all recommended surgery, I decided to research the issue myself before my scheduled surgery appointment. I wondered why my nose was swelling and began to uncover clues about the significant impact of diet on our bodies.
+…</summary>
+        </entry>
+</feed>

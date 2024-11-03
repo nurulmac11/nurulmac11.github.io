@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="https://nmacun.com/feed_style.xsl" type="text/xsl"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:base="http://purl.org/atompub/base/1.0/" xml:lang="tr" xml:base="https:&#x2F;&#x2F;nmacun.com&#x2F;">
+    <str:translations xmlns:str="https://github.com/welpo/tabi">
+        <str:separator>
+            •
+        </str:separator>
+        <str:about_feeds>Bu, bir Atom beslemesi olarak da bilinen bir web beslemesidir. Adres çubuğundaki URL&#x27;yi kopyalayıp haber okuyucunuza yapıştırarak abone olun. Hakkında Beslemeler sayfasını ziyaret ederek daha fazla bilgi edinin ve başlamanızı sağlayın. Ücretsizdir.</str:about_feeds>
+        <str:visit_the_site>Web sitesini ziyaret et</str:visit_the_site>
+        <str:recent_posts>Son gönderiler</str:recent_posts>
+        <str:last_updated_on>$DATE tarihinde güncellendi</str:last_updated_on>
+        <str:default_theme></str:default_theme>
+    </str:translations><link rel="extra-stylesheet" href="https://nmacun.com/skins/evangelion.css?h=191505807c4f09b9cc7e" /><title>nurulmac11'in blogu - iyi hissetmek</title>
+        <subtitle>aklıma esenler</subtitle>
+    <link href="https://nmacun.com/tr/tags/iyi-hissetmek/atom.xml" rel="self" type="application/atom+xml"/>
+    <post_listing_date>date</post_listing_date>
+    <link href="https://nmacun.com/tr/"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2024-09-25T00:00:00+00:00</updated>
+    <id>https://nmacun.com/tr/tags/iyi-hissetmek/atom.xml</id><entry xml:lang="tr">
+        <title>Okudum: İyi Hissetmek</title>
+        <published>2024-09-25T00:00:00+00:00</published>
+        <updated>2024-09-25T00:00:00+00:00</updated>
+        <author>
+            <name>nurulmac11</name>
+        </author>
+        <link rel="alternate" href="https://nmacun.com/tr/blog/iyi-hissetmek/" type="text/html"/>
+        <id>https://nmacun.com/tr/blog/iyi-hissetmek/</id>
+        <summary type="html">Psikoterapiye tonlarca para dökmeye gerek yok mu? Evde, bir kitap okuyarak düzelmek mümkün mü? Sahi, düzelmek ne demek? Hayatın bir anlamı var mı? Varsa bile, aranarak bulunabilir mi?</summary>
+        </entry>
+</feed>
