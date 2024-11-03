@@ -1,0 +1,79 @@
+{% macro list_posts(posts, max, language_strings="", section_path="blog") %}
+
+{%- set separator = config.extra.separator | default(value="•") -%}
+
+<div class="bloglist-container">
+    {% for post in posts %}
+        {% if loop.index <= max %}
+            {% if loop.index == max %}
+                <section class="bloglist-row">
+            {% elif loop.last %}
+                <section class="bloglist-row">
+            {% else %}
+                <section class="bloglist-row bottom-divider">
+            {% endif %}
+
+            <ul class="bloglist-meta">
+                {%- set allowed_post_listing_dates = ["date", "updated", "both"] -%}
+                {%- set post_listing_date = config.extra.post_listing_date | default(value="date") -%}
+                {%- if post_listing_date not in allowed_post_listing_dates -%}
+                    {{ throw(message="ERROR: Invalid value for config.extra.post_listing_date. Allowed values are 'date', 'updated', or 'both'.") }}
+                {%- endif -%}
+
+                {%- set show_date = post.date and post_listing_date == "date" or post.date and post_listing_date == "both" or post.date and post_listing_date == "updated" and not post.updated -%}
+                {%- set show_updated = post.updated and post_listing_date == "updated" or post.updated and post_listing_date == "both" -%}
+
+                {%- if show_date or show_updated -%}
+                    {%- if show_date -%}
+                        <li class="date">{{- macros_format_date::format_date(date=post.date, short=false, language_strings=language_strings) -}}</li>
+                    {%- endif -%}
+                    {%- if show_date and show_updated -%}
+                        <li class="mobile-only">{{- separator -}}</li>
+                    {%- endif -%}
+                    {%- if show_updated -%}
+                        {%- set last_updated_str = macros_translate::translate(key="last_updated_on", default="Updated on $DATE", language_strings=language_strings) -%}
+                        {%- set formatted_date = macros_format_date::format_date(date=post.updated, short=true, language_strings=language_strings) -%}
+                        {%- set updated_str = last_updated_str | replace(from="$DATE", to=formatted_date) -%}
+                        <li class="date">{{ updated_str }}</li>
+                    {%- endif -%}
+                {%- endif -%}
+
+                {% if post.draft %}
+                <li class="draft-label">{{ macros_translate::translate(key="draft", default="DRAFT", language_strings=language_strings) }}</li>
+                {% endif %}
+            </ul>
+            <div class="bloglist-content">
+                <h2 class="bloglist-title">
+                    <a href="{{ post.permalink }}">{{ post.title }}</a>
+                </h2>
+
+                {% if post.taxonomies.tags %}
+                    <div class="bloglist-tags">
+                        {% for tag in post.taxonomies.tags %}
+                            <a class="tag" href="{{ get_taxonomy_url(kind='tags', name=tag, lang=lang) | safe }}">{{ tag }}</a>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+
+                <div class="description">
+                    {% if post.description %}
+                        <p>{{ post.description }}</p>
+                    {% elif post.summary %}
+                        <p>{{ post.summary | striptags | trim_end_matches(pat=".") | safe }}…</p>
+                    {% endif %}
+                </div>
+                <a class="readmore" href="{{ post.permalink }}">{{ macros_translate::translate(key="read_more", default="Read more", language_strings=language_strings) }}&nbsp;<span class="arrow">→</span></a>
+            </div>
+        </section>
+    {% endif %}
+        {% if not loop.last %}
+            {% if loop.index == max %}
+                <div class="all-posts">
+                    <a href="{{ get_url(path=section_path, lang=lang) }}/">{{ macros_translate::translate(key="all_posts", default="All posts", language_strings=language_strings) }}&nbsp;<span class="arrow">⟶</span></a>
+                </div>
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+</div>
+
+{% endmacro %}

@@ -1,0 +1,6 @@
+{% if href %}
+  <a target="_blank" href="{{href}}" rel="external" data-type="article" class="article">{{text}}</a> 
+  {% if date %}
+  <span class="article_date">{{ date }}</span>
+  {% endif %}
+{% endif %}

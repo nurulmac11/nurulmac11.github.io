@@ -1,0 +1,93 @@
+language_name = "Türkçe"  # Çok dilli siteler için dil seçicide gösterilir.
+date_locale = "tr_TR"
+full_stop = "."  # Bir cümlenin sonunda kullanılır.
+
+# Menü öğeleri.
+# config.extra.menu ve config.extra.footer_menu'daki adlarla eşleşmelidir.
+blog = "blog"
+archive = "arşiv"
+tags = "etiketler"
+projects = "projeler"
+about = "hakkımda"
+contact = "iletişim"
+privacy = "gizlilik politikası"
+site_statistics = "site istatistikleri"
+sitemap = "site haritası"
+
+# Arama.
+search = "Arama"
+search_icon_title = "Aramayı açmak için tıklayın veya $SHORTCUT tuşuna basın"  # $SHORTCUT gerçek klavye kısayolu ile değiştirilecektir.
+clear_search = "Aramayı temizle"  # Arama girişinin yanındaki X simgesinin başlığı.
+zero_results = "Sonuç yok"
+one_results = "$NUMBER sonuç"  # "1 sonuç"
+many_results = "$NUMBER sonuç"  # "3 sonuç"
+
+# Navigasyon.
+read_more = "Daha fazlasını oku"
+one_posts = "$NUMBER gönderi"
+many_posts = "$NUMBER gönderi"  # "3 gönderi"
+prev = "Önceki"  # Önceki sayfa anlamında.
+next = "Sonraki"  # Sonraki sayfa anlamında.
+of = "üzerinden"  # Örneğin, Sayfa 1 "üzerinden" 3
+all_posts = "Tüm gönderiler"
+all_tags = "Tüm etiketler"
+all_projects = "Tüm projeler"
+featured_projects = "Öne çıkan projeler"
+language_selection = "Dil seçimi"
+toggle_mode = "$MODE modunu değiştir"  # $MODE bir değerle (veya her iki) değiştirilecektir.
+dark = "koyu"
+light = "açık"
+reset_mode = "Modu varsayılan ayara sıfırla"
+
+# Hızlı navigasyon düğmeleri.
+toggle_toc = "İçindekiler Tablosunu Aç/Kapat"
+go_to_top = "Sayfanın üstüne git"
+go_to_comments = "Yorumlar bölümüne git"
+
+# Gönderi meta verileri.
+by_author = "$AUTHOR tarafından"  # $AUTHOR yazar(lar) ile değiştirilecektir.
+author_separator = ", "  # Birden fazla yazar için. Gerekli yerlerde boşluk bırakmayı unutmayın.
+author_conjunction = " ve "  # Birden fazla yazar için. Gerekli yerlerde boşluk bırakmayı unutmayın.
+draft = "TASLAK"
+zero_min_read = "<1 dk. okuma"
+one_min_read = "$NUMBER dk. okuma"
+many_min_read = "$NUMBER dk. okuma"
+zero_words = "Kelime yok"
+one_words = "$NUMBER kelime"
+many_words = "$NUMBER kelime"
+last_updated_on = "$DATE tarihinde güncellendi"
+see_changes = "Değişiklikleri gör"
+
+# Gönderi metni.
+table_of_contents = "İçindekiler Tablosu"
+load_comments = "Yorumları yükle"
+
+# Kod bloğu kopyalama düğmesi.
+copied = "Kopyalandı!"
+copy_code_to_clipboard = "Kodu panoya kopyala"
+
+# Alt bilgi: Zola ve tabi ile desteklenmektedir.
+powered_by = "Destekleyen"
+and = "&"
+site_source = "Site kaynağı"
+
+# 404 hatası.
+# https://welpo.github.io/tabi/404.html
+page_missing = "İstediğiniz sayfa kayıp gibi görünüyor"
+translation_missing = "veya henüz dilinize çevrilmemiş olabilir"
+check_url = "URL'yi hatalar için kontrol edin veya"
+go_home = "ana sayfaya geri dönün"
+
+# Çok dilli alıntı kısa kodu için.
+# https://welpo.github.io/tabi/blog/shortcodes/#multilingual-quotes
+show_original_quote = "Orijinal alıntıyı göster"
+show_translation = "Çeviriyi göster"
+open_quotation_mark = "“"
+close_quotation_mark = "”"
+
+# Stilize Atom beslemesi için çeviriler.
+# https://welpo.github.io/tabi/atom.xml
+# "Hakkında Beslemeler" içermelidir; bu bir bağlantı olacaktır.
+about_feeds = "Bu, bir Atom beslemesi olarak da bilinen bir web beslemesidir. Adres çubuğundaki URL'yi kopyalayıp haber okuyucunuza yapıştırarak abone olun. Hakkında Beslemeler sayfasını ziyaret ederek daha fazla bilgi edinin ve başlamanızı sağlayın. Ücretsizdir."
+visit_the_site = "Web sitesini ziyaret et"
+recent_posts = "Son gönderiler"
